@@ -16,6 +16,8 @@ public class FirebaseCrashErrorReportTree extends LogPriorityTree {
 
     @Override
     protected void log(int priority, String tag, String message, Throwable t) {
-        FirebaseCrash.report(t);
+        if (t != null) {
+            FirebaseCrash.report(t);
+        }
     }
 }
