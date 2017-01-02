@@ -10,6 +10,25 @@ This library provide the following tree.
 
 ### Firebase Crash Reporting Tree
 
+#### Download
+
+[![Download](https://api.bintray.com/packages/operandoos/maven/firebase-crash/images/download.svg?version=0.9.0) ](https://bintray.com/operandoos/maven/firebase-crash/0.9.0/link) or grab via Gradle:
+
+```gradle
+compile 'com.os.operando.timber.tree:firebase-crash:0.9.0'
+```
+
+or Maven:
+
+```
+<dependency>
+  <groupId>com.os.operando.timber.tree</groupId>
+  <artifactId>firebase-crash</artifactId>
+  <version>0.9.0</version>
+  <type>pom</type>
+</dependency>
+```
+
 #### FirebaseCrashErrorReportTree (Default log level: WARN)
 
 Logging to Firebase Crach Rerpoting with `FirebaseCrash.report().`
