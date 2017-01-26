@@ -12,10 +12,10 @@ This library provide the following tree.
 
 #### Download
 
-[![Download](https://api.bintray.com/packages/operandoos/maven/firebase-crash/images/download.svg?version=0.9.0) ](https://bintray.com/operandoos/maven/firebase-crash/0.9.0/link) or grab via Gradle:
+[![Download](https://api.bintray.com/packages/operandoos/maven/firebase-crash/images/download.svg?version=1.0.0) ](https://bintray.com/operandoos/maven/firebase-crash/1.0.0/link) or grab via Gradle:
 
 ```gradle
-compile 'com.os.operando.timber.tree:firebase-crash:0.9.0'
+compile 'com.os.operando.timber.tree:firebase-crash:1.0.0'
 ```
 
 or Maven:
@@ -24,12 +24,12 @@ or Maven:
 <dependency>
   <groupId>com.os.operando.timber.tree</groupId>
   <artifactId>firebase-crash</artifactId>
-  <version>0.9.0</version>
+  <version>1.0.0</version>
   <type>pom</type>
 </dependency>
 ```
 
-#### FirebaseCrashErrorReportTree (Default log level: WARN)
+#### FirebaseCrashErrorReportTree (Default log level: ERROR)
 
 Logging to Firebase Crach Rerpoting with `FirebaseCrash.report().`
 
