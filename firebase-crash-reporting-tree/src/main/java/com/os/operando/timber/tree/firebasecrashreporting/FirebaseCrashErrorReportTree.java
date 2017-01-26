@@ -7,7 +7,7 @@ import com.google.firebase.crash.FirebaseCrash;
 public class FirebaseCrashErrorReportTree extends LogPriorityTree {
 
     public FirebaseCrashErrorReportTree() {
-        this(Log.WARN);
+        this(Log.ERROR);
     }
 
     public FirebaseCrashErrorReportTree(int logPriority) {
