@@ -26,5 +26,12 @@ public class MainActivity extends AppCompatActivity {
                 Timber.e(new Exception("error test"), "error test");
             }
         });
+
+        findViewById(R.id.debug_error).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Timber.d(new Exception("debug error test"), "error test");
+            }
+        });
     }
 }
