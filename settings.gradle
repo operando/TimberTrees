@@ -1,2 +1,2 @@
-include ':sample'
+include ':sample', ':crash-reporting-to-slack-tree'
 include ':firebase-crash-reporting-tree'
