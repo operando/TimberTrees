@@ -1,4 +1,14 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.4.0'
+    }
+}
 
 android {
     compileSdkVersion 25
@@ -22,4 +32,19 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.jakewharton.timber:timber:4.5.1'
     provided 'com.squareup.okhttp3:okhttp:3.8.0'
+}
+
+publish {
+    groupId = 'com.os.operando.timber.tree'
+    artifactId = 'slack-crash-reporting'
+    publishVersion = '0.9.0'
+    licences = ['Apache-2.0']
+    description = "Slack Crash Reporting Tree"
+    website = 'https://github.com/operando/TimberTrees'
+    issueTracker = "https://github.com/operando/TimberTrees/issues"
+    repository = "https://github.com/operando/TimberTrees.git"
+    bintrayUser = "${bintrayUser}"
+    bintrayKey = "${bintrayKey}"
+    autoPublish = false
+    dryRun = false
 }
